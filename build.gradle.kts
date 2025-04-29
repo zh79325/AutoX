@@ -29,14 +29,15 @@ buildscript {
 
 allprojects {
     repositories {
-        mavenLocal()
+        //mavenLocal()
         //首选国外镜像加快github CI
+        maven { url= uri("https://maven.aliyun.com/repository/central") }
+        maven { url = uri("https://maven.aliyun.com/repository/google") }
+        maven { url = uri("https://maven.aliyun.com/repository/public") }
+        maven { url= uri("https://maven.aliyun.com/repository/gradle-plugin/")}
+        maven("https://www.jitpack.io")
         google()
         mavenCentral()
-        maven("https://www.jitpack.io")
-        maven("https://maven.aliyun.com/repository/central")
-        google { url = uri("https://maven.aliyun.com/repository/google") }
-        mavenCentral { url = uri("https://maven.aliyun.com/repository/public") }
     }
 }
 
