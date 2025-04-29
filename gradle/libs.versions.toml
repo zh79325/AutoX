@@ -52,7 +52,7 @@ lifecycle-service = { module = "androidx.lifecycle:lifecycle-service", version.r
 # androidx compose
 compose-bom = "androidx.compose:compose-bom:2025.02.00"
 compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
-compose-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
+compose-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4", version="1.7.8" }
 compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
 compose-material = { module = "androidx.compose.material:material" }
 compose-ui = { module = "androidx.compose.ui:ui" }
