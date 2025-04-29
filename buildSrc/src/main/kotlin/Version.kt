@@ -33,11 +33,11 @@ data class Versions(
     @SerializedName("IDE")
     val ide: String = "Android Studio Hedgehog | 2023.1.1",
     @SerializedName("JDK")
-    val jdk: String = "17",
+    val jdk: String = "21",
     @SerializedName("mini")
     val mini: Int = 26,
     @SerializedName("target")
     val target: Int = 34,
 ){
-    val javaVersion: JavaVersion = JavaVersion.VERSION_17
+    val javaVersion: JavaVersion = JavaVersion.VERSION_21
 }
