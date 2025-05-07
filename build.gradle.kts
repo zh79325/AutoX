@@ -1,4 +1,8 @@
+import com.android.sdklib.repository.AndroidSdkHandler
+
 initVersions(file("project-versions.json"))
+//国内使用腾讯镜像
+System.setProperty(AndroidSdkHandler.SDK_TEST_BASE_URL_PROPERTY,"https://mirrors.cloud.tencent.com/AndroidSDK/")
 plugins {
     id("com.google.devtools.ksp") version "$kotlin_version-1.0.20" apply false
 }
@@ -42,5 +46,5 @@ allprojects {
 }
 
 tasks.register<Delete>("clean").configure {
-    delete(rootProject.buildDir)
+    delete(rootProject.layout.buildDirectory)
 }
