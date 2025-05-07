@@ -12,12 +12,12 @@ buildscript {
     repositories {
         mavenLocal()
         //首选国外镜像加快github CI
-        google()
-        mavenCentral()
-        maven("https://www.jitpack.io")
         maven("https://maven.aliyun.com/repository/central")
         google { url = uri("https://maven.aliyun.com/repository/google") }
         mavenCentral { url = uri("https://maven.aliyun.com/repository/public") }
+        google()
+        mavenCentral()
+        maven("https://www.jitpack.io")
     }
     dependencies {
         classpath("com.android.tools.build:gradle:8.5.0")
